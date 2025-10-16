@@ -174,7 +174,7 @@ export default function BloxstrapClone() {
 
       {/* Footer */}
       <footer className="animate-on-scroll opacity-0 transition-all duration-1000 ease-out text-center">
-        <p>© 2025 Voidstrap developers and contributors. Voidstrap is not affiliated with Roblox in any way.</p>
+        <p>© 2025 Voidstrap is not affiliated with Roblox in any way.</p>
       </footer>
 
       <style jsx>{`
