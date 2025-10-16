@@ -17,12 +17,12 @@ export default function BloxstrapClone() {
       {/* Navigation */}
       <nav>
         <div className="bg-neutral-950 px-4 py-4 rounded-xl flex flex-col items-center justify-between gap-y-4 sm:flex-row">
-          <img src={IMAGES.logo} alt="Voidstrap Logo" className="max-w-40" width="200" height="43" />
+          <img src={IMAGES.logo} alt="Bloxstrap Logo" className="max-w-40" width="200" height="43" />
           <div className="flex gap-x-6 pr-2">
             <a className="font-medium text-gray-300 hover:text-white transition duration-300" href="/wiki/">Wiki</a>
             <a className="font-medium text-gray-300 hover:text-white transition duration-300" href="/wiki/faq/">FAQ</a>
             <a className="font-medium text-gray-300 hover:text-white transition duration-300" href="/discord">Discord</a>
-            <a className="font-medium text-gray-300 hover:text-white transition duration-300" href="https://github.com/voidstrap/Voidstrap">GitHub</a>
+            <a className="font-medium text-gray-300 hover:text-white transition duration-300" href="https://github.com/bloxstraplabs/bloxstrap">GitHub</a>
           </div>
         </div>
       </nav>
@@ -33,7 +33,7 @@ export default function BloxstrapClone() {
         <div className="pb-8">
           <h1 className="text-4xl font-medium mb-4 sm:text-5xl">Get more out of Roblox</h1>
           <h2 className="text-lg text-gray-200 mb-4 sm:text-xl">
-            Voidstrap is an alternative launcher for Roblox that provides additional useful features and functions
+            Bloxstrap is an alternative launcher for Roblox that provides additional useful features and functions
           </h2>
         </div>
 
@@ -54,7 +54,7 @@ export default function BloxstrapClone() {
             </a>
           </p>
           <p className="mb-2">
-            Voidstrap requires the{' '}
+            Bloxstrap requires the{' '}
             <a className="text-violet-400 hover:text-violet-300 transition duration-300" href="https://aka.ms/dotnet-core-applaunch?missing_runtime=true&arch=x64&rid=win11-x64&apphost_version=6.0.20&gui=true">
               Microsoft .NET 6 Desktop Runtime
             </a>{' '}
@@ -106,11 +106,11 @@ export default function BloxstrapClone() {
           <div className="flex-1">
             <h1 className="text-2xl font-medium mb-2">Free and open source</h1>
             <p className="text-gray-200 mb-2">
-              Voidstrap's code is not available on GitHub and no one can see has permission to contribute to it.
+              Bloxstrap's code is available on GitHub and anyone can see inside it, contribute to it, or even make their own version.
             </p>
             <p>
-              <a className="text-violet-400 hover:text-violet-300 transition duration-300" href="Uh, Uh, Uh Skids">
-                Not Today, Skids
+              <a className="text-violet-400 hover:text-violet-300 transition duration-300" href="https://github.com/bloxstraplabs/bloxstrap">
+                github.com/bloxstraplabs/bloxstrap
               </a>
             </p>
           </div>
@@ -128,7 +128,7 @@ export default function BloxstrapClone() {
         {/* Footer Info */}
         <div className="py-12">
           <p className="mb-2">
-            Voidstrap is digitally code signed for free thanks to the{' '}
+            Bloxstrap is digitally code signed for free thanks to the{' '}
             <a className="text-violet-400 hover:text-violet-300 transition duration-300" href="https://signpath.org/">
               SignPath Foundation
             </a>
@@ -143,7 +143,7 @@ export default function BloxstrapClone() {
 
       {/* Footer */}
       <footer className="text-center">
-        <p>© 2025 Voidstrap developers and contributors. Voidstrap is not affiliated with Roblox in any way.</p>
+        <p>© 2025 Bloxstrap developers and contributors. Bloxstrap is not affiliated with Roblox in any way.</p>
       </footer>
     </div>
   );
