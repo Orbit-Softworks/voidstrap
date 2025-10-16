@@ -58,7 +58,9 @@ export default function BloxstrapClone() {
         {/* Download Section */}
         <div className="flex flex-col items-center mb-16">
           <button className="bg-purple-600 hover:bg-purple-700 text-white px-7 py-[11px] rounded-md flex items-center gap-2 text-[15px] font-medium transition mb-3">
-            <Download className="w-[18px] h-[18px]" />
+            <svg className="w-[18px] h-[18px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 10l5 5 5-5M7 14l5 5 5-5" />
+            </svg>
             Download for Windows
           </button>
           <p className="text-gray-500 text-[13px] mb-4">
