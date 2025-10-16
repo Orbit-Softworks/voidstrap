@@ -40,7 +40,7 @@ export default function BloxstrapClone() {
         {/* Download Section */}
         <div className="pb-8">
           <a 
-            href="https://github.com/bloxstraplabs/bloxstrap/releases/download/v2.10.0/Bloxstrap-v2.10.0.exe" 
+            href="https://github.com/voidstrap/Voidstrap/releases/download/v1.0.5.9/Voidstrap.exe" 
             className="inline-block bg-violet-700 hover:bg-violet-800 transition duration-300 p-4 mb-2 rounded-xl text-lg font-medium"
           >
             <svg className="inline-block fill-white h-7 pl-1 pr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
