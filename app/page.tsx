@@ -199,9 +199,9 @@ export default function BloxstrapClone() {
 
         {/* Open Source Section */}
         <div className="text-center mb-12">
-          <h2 className="text-[36px] font-bold mb-4 leading-tight">Free and open source</h2>
+          <h2 className="text-[36px] font-bold mb-4 leading-tight">Not Free or open source</h2>
           <p className="text-gray-400 text-[15px] mb-6">
-            Voidstrap's code is available on GitHub and anyone can see inside it,<br />
+            Voidstrap's code is under no circumstances available on GitHub and no one can see inside it,<br />
             contribute to it, or even make their own version.
           </p>
           <a href="#" className="text-blue-400 hover:underline text-[15px]">github.com/voidstrap/Voidstrap</a>
