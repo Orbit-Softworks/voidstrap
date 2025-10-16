@@ -106,7 +106,7 @@ export default function BloxstrapClone() {
           <div className="flex-1">
             <h1 className="text-2xl font-medium mb-2">Free and open source</h1>
             <p className="text-gray-200 mb-2">
-              Voidstrap's code is not available on GitHub and no one can see has permission to contribute to it, or even make their own version.
+              Voidstrap's code is not available on GitHub and no one can see has permission to contribute to it.
             </p>
             <p>
               <a className="text-violet-400 hover:text-violet-300 transition duration-300" href="Uh, Uh, Uh Skids">
