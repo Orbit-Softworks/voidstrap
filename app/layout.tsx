@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Download | Voidstrap",
-  description: "Official Download For Voidstrap.",
+  description: "Voidstrap is an alternative launcher for Roblox that provides additional useful features and functions.",
 };
 
 export default function RootLayout({
