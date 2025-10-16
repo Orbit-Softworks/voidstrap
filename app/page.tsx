@@ -24,7 +24,7 @@ export default function BloxstrapClone() {
       <header className="flex items-center justify-between px-6 py-5 bg-black">
         <div className="flex items-center gap-2.5">
           {IMAGES.logo ? (
-            <img src={IMAGES.logo} alt="Bloxstrap" className="w-7 h-7" />
+            <img src={IMAGES.logo} alt="Voidstrap" className="w-7 h-7" />
           ) : (
             <div className="w-7 h-7 bg-purple-600 rounded-sm flex items-center justify-center">
               <div className="grid grid-cols-2 gap-[3px]">
@@ -35,7 +35,7 @@ export default function BloxstrapClone() {
               </div>
             </div>
           )}
-          <span className="text-[17px] font-medium tracking-tight">Bloxstrap</span>
+          <span className="text-[17px] font-medium tracking-tight">Voidstrap</span>
         </div>
         <nav className="flex gap-7 text-[13px] font-normal">
           <a href="#" className="text-gray-300 hover:text-white transition">Wiki</a>
@@ -51,7 +51,7 @@ export default function BloxstrapClone() {
         <div className="text-center pt-20 pb-12">
           <h1 className="text-[56px] font-bold leading-tight mb-3 tracking-tight">Get more out of Roblox</h1>
           <p className="text-[17px] text-gray-400 font-normal">
-            Bloxstrap is an alternative launcher for Roblox that provides additional useful features and functions
+            Voidstrap is an alternative launcher for Roblox that provides additional useful features and functions
           </p>
         </div>
 
@@ -67,7 +67,7 @@ export default function BloxstrapClone() {
             Or, install with Winget
           </p>
           <p className="text-gray-400 text-[13px] mb-2">
-            Bloxstrap requires the <a href="#" className="text-blue-400 hover:underline">Microsoft .NET 6 Desktop Runtime</a> to be installed
+            Voidstrap requires the <a href="#" className="text-blue-400 hover:underline">Microsoft .NET 6 Desktop Runtime</a> to be installed
           </p>
           <a href="#" className="text-blue-400 hover:underline text-[13px]">Frequently asked questions</a>
         </div>
@@ -139,7 +139,7 @@ export default function BloxstrapClone() {
                 </div>
                 <div className="flex-1 flex items-center gap-2 text-[11px] text-gray-500">
                   <span>🏠</span>
-                  <span>Bloxstrap</span>
+                  <span>Voidstrap</span>
                   <span>›</span>
                   <span>Modifications</span>
                   <span>›</span>
@@ -201,10 +201,10 @@ export default function BloxstrapClone() {
         <div className="text-center mb-12">
           <h2 className="text-[36px] font-bold mb-4 leading-tight">Free and open source</h2>
           <p className="text-gray-400 text-[15px] mb-6">
-            Bloxstrap's code is available on GitHub and anyone can see inside it,<br />
+            Voidstrap's code is available on GitHub and anyone can see inside it,<br />
             contribute to it, or even make their own version.
           </p>
-          <a href="#" className="text-blue-400 hover:underline text-[15px]">github.com/bloxstraplabs/bloxstrap</a>
+          <a href="#" className="text-blue-400 hover:underline text-[15px]">github.com/voidstrap/Voidstrap</a>
         </div>
 
         {/* Contributors */}
@@ -229,7 +229,7 @@ export default function BloxstrapClone() {
 
         {/* SignPath */}
         <div className="text-center text-gray-400 text-[13px] mb-6">
-          Bloxstrap is digitally code signed for free thanks to the <a href="#" className="text-blue-400 hover:underline">SignPath Foundation</a>
+          Voidstrap is digitally code signed for free thanks to the <a href="#" className="text-blue-400 hover:underline">SignPath Foundation</a>
         </div>
 
         {/* Privacy Policy */}
@@ -240,7 +240,7 @@ export default function BloxstrapClone() {
 
       {/* Footer */}
       <footer className="text-center text-gray-500 text-[12px] py-10 border-t border-gray-900">
-        © 2025 Bloxstrap developers and contributors. Bloxstrap is not affiliated with Roblox in any way.
+        © 2025 Voidstrap developers and contributors. Voidstrap is not affiliated with Roblox in any way.
       </footer>
     </div>
   );
