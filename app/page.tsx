@@ -79,11 +79,6 @@ export default function BloxstrapClone() {
             </svg>
             Download for Windows
           </a>
-          <p className="mb-6 text-sm text-gray-300">
-            <a className="hover:text-white transition duration-300" href="https://winstall.app/apps/pizzaboxer.Bloxstrap">
-              Or, install with Winget
-            </a>
-          </p>
           <p className="mb-2">
             Voidstrap requires the{' '}
             <a className="text-violet-400 hover:text-violet-300 transition duration-300" href="https://aka.ms/dotnet-core-applaunch?missing_runtime=true&arch=x64&rid=win11-x64&apphost_version=6.0.20&gui=true">
