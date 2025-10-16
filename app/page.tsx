@@ -6,241 +6,144 @@ export default function BloxstrapClone() {
   // ========================================
   const IMAGES = {
     logo: 'https://raw.githubusercontent.com/Orbit-Softworks/voidstrap/refs/heads/main/voidstrap.png', // Bloxstrap logo
-    discordCard1Avatar: 'https://bloxstraplabs.com/_astro/discord.ByrrKmUB_TGTJD.webp', // First Discord card avatar
-    discordCard2Avatar: 'https://bloxstraplabs.com/_astro/discord.ByrrKmUB_TGTJD.webp', // Second Discord card avatar
-    notificationAvatar: 'https://bloxstraplabs.com/_astro/mods.CtDJj0bv_Z2bSg6j.webp', // Notification window avatar
-    notificationEmoji: 'https://contrib.rocks/image?repo=bloxstraplabs/bloxstrap', // Notification emoji icon
-    contributors: [
-      'e', 'e2', 'e3', 'e4', 'e5', 'e6', 'e7', 'e8', // Row 1 (8 contributors)
-      '', '', '', '', '', '', '', '', // Row 2 (8 contributors)
-      '', '', '', '', '', '', '', ''  // Row 3 (8 contributors)
-    ]
+    discordImage: 'https://bloxstraplabs.com/_astro/discord.ByrrKmUB_TGTJD.webp', // Discord integration image
+    modsImage: 'https://bloxstraplabs.com/_astro/mods.CtDJj0bv_Z2bSg6j.webp', // Customization/mods image
+    contributorsImage: 'https://contrib.rocks/image?repo=bloxstraplabs/bloxstrap', // Contributors image
   };
   // ========================================
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      {/* Header */}
-      <header className="flex items-center justify-between px-6 py-5 bg-black">
-        <div className="flex items-center gap-2.5">
-          {IMAGES.logo ? (
-            <img src={IMAGES.logo} alt="Voidstrap" className="w-7 h-7" />
-          ) : (
-            <div className="w-7 h-7 bg-purple-600 rounded-sm flex items-center justify-center">
-              <div className="grid grid-cols-2 gap-[3px]">
-                <div className="w-[7px] h-[7px] bg-white rounded-[1px]"></div>
-                <div className="w-[7px] h-[7px] bg-white rounded-[1px]"></div>
-                <div className="w-[7px] h-[7px] bg-white rounded-[1px]"></div>
-                <div className="w-[7px] h-[7px] bg-white rounded-[1px]"></div>
-              </div>
-            </div>
-          )}
-          <span className="text-[17px] font-medium tracking-tight">Voidstrap</span>
+    <div className="flex flex-col min-h-screen bg-neutral-900 text-white mx-auto max-w-7xl p-8">
+      {/* Navigation */}
+      <nav>
+        <div className="bg-neutral-950 px-4 py-4 rounded-xl flex flex-col items-center justify-between gap-y-4 sm:flex-row">
+          <img src={IMAGES.logo} alt="Bloxstrap Logo" className="max-w-40" width="200" height="43" />
+          <div className="flex gap-x-6 pr-2">
+            <a className="font-medium text-gray-300 hover:text-white transition duration-300" href="/wiki/">Wiki</a>
+            <a className="font-medium text-gray-300 hover:text-white transition duration-300" href="/wiki/faq/">FAQ</a>
+            <a className="font-medium text-gray-300 hover:text-white transition duration-300" href="/discord">Discord</a>
+            <a className="font-medium text-gray-300 hover:text-white transition duration-300" href="https://github.com/bloxstraplabs/bloxstrap">GitHub</a>
+          </div>
         </div>
-        <nav className="flex gap-7 text-[13px] font-normal">
-          <a href="#" className="text-gray-300 hover:text-white transition">Wiki</a>
-          <a href="#" className="text-gray-300 hover:text-white transition">FAQ</a>
-          <a href="#" className="text-gray-300 hover:text-white transition">Discord</a>
-          <a href="#" className="text-gray-300 hover:text-white transition">GitHub</a>
-        </nav>
-      </header>
+      </nav>
 
       {/* Main Content */}
-      <main className="max-w-[1100px] mx-auto px-8">
+      <main className="flex-1 my-12 text-center">
         {/* Hero Section */}
-        <div className="text-center pt-20 pb-12">
-          <h1 className="text-[56px] font-bold leading-tight mb-3 tracking-tight">Get more out of Roblox</h1>
-          <p className="text-[17px] text-gray-400 font-normal">
-            Voidstrap is an alternative launcher for Roblox that provides additional useful features and functions
-          </p>
+        <div className="pb-8">
+          <h1 className="text-4xl font-medium mb-4 sm:text-5xl">Get more out of Roblox</h1>
+          <h2 className="text-lg text-gray-200 mb-4 sm:text-xl">
+            Bloxstrap is an alternative launcher for Roblox that provides additional useful features and functions
+          </h2>
         </div>
 
         {/* Download Section */}
-        <div className="flex flex-col items-center mb-16">
-          <button className="bg-purple-600 hover:bg-purple-700 text-white px-7 py-[11px] rounded-md flex items-center gap-2 text-[15px] font-medium transition mb-3">
-            <svg className="w-[18px] h-[18px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 10l5 5 5-5M7 14l5 5 5-5" />
+        <div className="pb-8">
+          <a 
+            href="https://github.com/bloxstraplabs/bloxstrap/releases/download/v2.10.0/Bloxstrap-v2.10.0.exe" 
+            className="inline-block bg-violet-700 hover:bg-violet-800 transition duration-300 p-4 mb-2 rounded-xl text-lg font-medium"
+          >
+            <svg className="inline-block fill-white h-7 pl-1 pr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path className="stroke-current stroke-10" d="M169.4 502.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 402.7 224 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 370.7-105.4-105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
             </svg>
             Download for Windows
-          </button>
-          <p className="text-gray-500 text-[13px] mb-4">
-            Or, install with Winget
+          </a>
+          <p className="mb-6 text-sm text-gray-300">
+            <a className="hover:text-white transition duration-300" href="https://winstall.app/apps/pizzaboxer.Bloxstrap">
+              Or, install with Winget
+            </a>
           </p>
-          <p className="text-gray-400 text-[13px] mb-2">
-            Voidstrap requires the <a href="#" className="text-blue-400 hover:underline">Microsoft .NET 6 Desktop Runtime</a> to be installed
+          <p className="mb-2">
+            Bloxstrap requires the{' '}
+            <a className="text-violet-400 hover:text-violet-300 transition duration-300" href="https://aka.ms/dotnet-core-applaunch?missing_runtime=true&arch=x64&rid=win11-x64&apphost_version=6.0.20&gui=true">
+              Microsoft .NET 6 Desktop Runtime
+            </a>{' '}
+            to be installed
           </p>
-          <a href="#" className="text-blue-400 hover:underline text-[13px]">Frequently asked questions</a>
+          <p className="mb-2">
+            <a className="text-violet-400 hover:text-violet-300 transition duration-300" href="/wiki/faq">
+              Frequently asked questions
+            </a>
+          </p>
         </div>
 
         {/* Discord Integration Section */}
-        <div className="mb-20">
-          <div className="grid grid-cols-2 gap-12 items-start">
-            <div className="pt-8">
-              <h2 className="text-[28px] font-bold mb-4 leading-tight">Bridging Roblox and Discord</h2>
-              <p className="text-gray-400 text-[15px] leading-relaxed">
-                Share what you're doing among friends with ease, with<br />
-                extensible support for developer integration.
-              </p>
-            </div>
-            <div className="flex gap-4">
-              {/* Discord Card 1 */}
-              <div className="bg-[#2b2d31] rounded-lg p-4 flex-1">
-                <div className="flex items-start gap-3 mb-4">
-                  {IMAGES.discordCard1Avatar ? (
-                    <img src={IMAGES.discordCard1Avatar} alt="Avatar" className="w-12 h-12 rounded-full" />
-                  ) : (
-                    <div className="w-12 h-12 bg-red-500 rounded-full flex-shrink-0"></div>
-                  )}
-                  <div className="flex-1 min-w-0">
-                    <div className="font-semibold text-[15px] text-white">Roblox</div>
-                    <div className="text-[12px] text-gray-400 leading-tight">LEGOing in Grand Dook</div>
-                    <div className="text-[12px] text-gray-400 leading-tight">Casino of Players</div>
-                  </div>
-                </div>
-                <button className="bg-[#248046] hover:bg-[#1f6f3c] text-white text-[13px] font-medium px-4 py-[7px] rounded w-full transition mb-2">
-                  Join server
-                </button>
-                <a href="#" className="text-blue-400 text-[12px] hover:underline block text-center">
-                  See game page
-                </a>
-              </div>
-              {/* Discord Card 2 */}
-              <div className="bg-[#2b2d31] rounded-lg p-4 flex-1">
-                <div className="flex items-start gap-3 mb-4">
-                  {IMAGES.discordCard2Avatar ? (
-                    <img src={IMAGES.discordCard2Avatar} alt="Avatar" className="w-12 h-12 rounded-full" />
-                  ) : (
-                    <div className="w-12 h-12 bg-blue-500 rounded-full flex-shrink-0"></div>
-                  )}
-                  <div className="flex-1 min-w-0">
-                    <div className="font-semibold text-[15px] text-white">Roblox</div>
-                    <div className="text-[12px] text-gray-400 leading-tight">Playing a GAME | (Still partnered)</div>
-                    <div className="text-[12px] text-gray-400 leading-tight">On the Highlight</div>
-                    <div className="text-[12px] text-gray-400 leading-tight">🎮 1 to 10</div>
-                  </div>
-                </div>
-                <button className="bg-[#248046] hover:bg-[#1f6f3c] text-white text-[13px] font-medium px-4 py-[7px] rounded w-full transition">
-                  See game page
-                </button>
-              </div>
-            </div>
+        <div className="py-8 flex flex-col items-center justify-center gap-x-12 gap-y-6 lg:flex-row">
+          <div className="max-w-lg">
+            <h1 className="text-2xl font-medium mb-2">Bridging Roblox and Discord</h1>
+            <p className="text-gray-200">
+              Share what you're doing among friends with ease, with extensible support for{' '}
+              <a className="text-violet-400 hover:text-violet-300 transition duration-300" href="/wiki/developers/bloxstraprpc/">
+                developer integration
+              </a>
+              .
+            </p>
           </div>
-        </div>
-
-        {/* Notification Section */}
-        <div className="flex justify-center mb-24">
-          <div className="w-[600px]">
-            <div className="bg-[#1a1a1a] rounded-lg shadow-2xl overflow-hidden border border-gray-800">
-              <div className="bg-[#252525] px-4 py-2 flex items-center gap-3 border-b border-gray-800">
-                <div className="flex gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-[#ff5f57]"></div>
-                  <div className="w-3 h-3 rounded-full bg-[#ffbd2e]"></div>
-                  <div className="w-3 h-3 rounded-full bg-[#28ca42]"></div>
-                </div>
-                <div className="flex-1 flex items-center gap-2 text-[11px] text-gray-500">
-                  <span>🏠</span>
-                  <span>Voidstrap</span>
-                  <span>›</span>
-                  <span>Modifications</span>
-                  <span>›</span>
-                  <span>context</span>
-                  <span>›</span>
-                  <span>textlang</span>
-                  <span>›</span>
-                  <span>Games</span>
-                </div>
-                <div className="flex gap-2 text-gray-600">
-                  <button className="hover:text-white">🗕</button>
-                  <button className="hover:text-white">⬜</button>
-                  <button className="hover:text-white">✕</button>
-                </div>
-              </div>
-              <div className="bg-[#1a1a1a] px-4 py-3">
-                <div className="flex items-center gap-3 mb-3 text-[11px] text-gray-500">
-                  <button className="hover:text-white">← New ▼</button>
-                  <button className="hover:text-white">↻</button>
-                  <button className="hover:text-white">✂</button>
-                  <button className="hover:text-white">📋</button>
-                  <button className="hover:text-white">📁</button>
-                  <button className="hover:text-white">🗑</button>
-                  <button className="hover:text-white">⋮</button>
-                </div>
-                <div className="bg-gradient-to-br from-[#5865f2] to-[#7289da] rounded-lg p-6">
-                  <div className="flex items-center gap-4">
-                    {IMAGES.notificationAvatar ? (
-                      <img src={IMAGES.notificationAvatar} alt="Avatar" className="w-14 h-14 rounded-full" />
-                    ) : (
-                      <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center text-3xl">
-                        {IMAGES.notificationEmoji ? <img src={IMAGES.notificationEmoji} alt="Emoji" className="w-10 h-10" /> : '😊'}
-                      </div>
-                    )}
-                    <div className="bg-[#36393f] rounded-full px-5 py-2.5 flex items-center gap-3">
-                      <span className="text-white text-lg">=</span>
-                      <span className="text-2xl">💬</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-3 text-[11px] text-gray-500">
-                  ArrowKicksCat or.png
-                </div>
-              </div>
-            </div>
+          <div>
+            <img src={IMAGES.discordImage} alt="Discord integration" className="mx-auto" width="652" height="202" />
           </div>
         </div>
 
         {/* Customization Section */}
-        <div className="text-center mb-20">
-          <h2 className="text-[36px] font-bold mb-4 leading-tight">Customisation made easier</h2>
-          <p className="text-gray-400 text-[15px]">
-            Modify local assets without worrying about them being erased by Roblox<br />
-            updates, and with easy importing of <a href="#" className="text-blue-400 hover:underline">community-sourced mods</a>.
-          </p>
+        <div className="py-8 flex flex-col items-center justify-center gap-x-12 gap-y-6 lg:flex-row-reverse">
+          <div className="flex-1">
+            <h1 className="text-2xl font-medium mb-2">Customisation made easier</h1>
+            <p className="text-gray-200">
+              Modify local assets without worrying about them being erased by Roblox updates, and with easy importing of{' '}
+              <a className="text-violet-400 hover:text-violet-300 transition duration-300" href="/wiki/faq#where-can-i-find-mods">
+                community-curated mods
+              </a>
+              .
+            </p>
+          </div>
+          <div className="flex-1">
+            <img src={IMAGES.modsImage} alt="Customization mods" className="mx-auto max-w-90" width="360" height="259" />
+          </div>
         </div>
 
         {/* Open Source Section */}
-        <div className="text-center mb-12">
-          <h2 className="text-[36px] font-bold mb-4 leading-tight">Not Free or open source</h2>
-          <p className="text-gray-400 text-[15px] mb-6">
-            Voidstrap's code is under no circumstances available on GitHub and no one can see inside it,<br />
-            contribute to it, or even make their own version.
+        <div className="py-8 flex flex-col items-center justify-center gap-x-12 gap-y-6 lg:flex-row">
+          <div className="flex-1">
+            <h1 className="text-2xl font-medium mb-2">Free and open source</h1>
+            <p className="text-gray-200 mb-2">
+              Bloxstrap's code is available on GitHub and anyone can see inside it, contribute to it, or even make their own version.
+            </p>
+            <p>
+              <a className="text-violet-400 hover:text-violet-300 transition duration-300" href="https://github.com/bloxstraplabs/bloxstrap">
+                github.com/bloxstraplabs/bloxstrap
+              </a>
+            </p>
+          </div>
+          <div className="flex-1 text-left">
+            <img className="mb-2" src={IMAGES.contributorsImage} alt="Contributors" />
+            <small className="text-gray-300">
+              Made with{' '}
+              <a className="text-violet-400 hover:text-violet-300 transition duration-300" href="https://contrib.rocks">
+                contrib.rocks
+              </a>
+            </small>
+          </div>
+        </div>
+
+        {/* Footer Info */}
+        <div className="py-12">
+          <p className="mb-2">
+            Bloxstrap is digitally code signed for free thanks to the{' '}
+            <a className="text-violet-400 hover:text-violet-300 transition duration-300" href="https://signpath.org/">
+              SignPath Foundation
+            </a>
           </p>
-          <a href="#" className="text-blue-400 hover:underline text-[15px]">github.com/voidstrap/Voidstrap</a>
-        </div>
-
-        {/* Contributors */}
-        <div className="flex justify-center items-center gap-1.5 mb-3 flex-wrap max-w-[650px] mx-auto">
-          {IMAGES.contributors.map((img, i) => (
-            img ? (
-              <img key={i} src={img} alt={`Contributor ${i + 1}`} className="w-11 h-11 rounded-full" />
-            ) : (
-              <div
-                key={i}
-                className="w-11 h-11 rounded-full bg-gradient-to-br from-purple-600 via-blue-500 to-pink-500"
-                style={{
-                  background: `linear-gradient(135deg, 
-                    hsl(${(i * 37) % 360}, 70%, 50%), 
-                    hsl(${((i * 37) + 60) % 360}, 70%, 50%))`
-                }}
-              ></div>
-            )
-          ))}
-        </div>
-        <p className="text-center text-gray-500 text-[13px] mb-16">Made with contributions</p>
-
-        {/* SignPath */}
-        <div className="text-center text-gray-400 text-[13px] mb-6">
-          Voidstrap is digitally code signed for free thanks to the <a href="#" className="text-blue-400 hover:underline">SignPath Foundation</a>
-        </div>
-
-        {/* Privacy Policy */}
-        <div className="text-center mb-20">
-          <a href="#" className="text-blue-400 hover:underline text-[13px]">Privacy policy</a>
+          <p>
+            <a className="text-violet-400 hover:text-violet-300 transition duration-300" href="/wiki/info/privacy-policy/">
+              Privacy policy
+            </a>
+          </p>
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="text-center text-gray-500 text-[12px] py-10 border-t border-gray-900">
-        © 2025 Voidstrap developers and contributors. Voidstrap is not affiliated with Roblox in any way.
+      <footer className="text-center">
+        <p>© 2025 Bloxstrap developers and contributors. Bloxstrap is not affiliated with Roblox in any way.</p>
       </footer>
     </div>
   );
