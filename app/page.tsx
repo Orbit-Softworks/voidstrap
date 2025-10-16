@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 export default function BloxstrapClone() {
   const [isLoaded, setIsLoaded] = useState(false);
-  const observerRef = useRef(null);
+  const observerRef = useRef<IntersectionObserver | null>(null);
   
   useEffect(() => {
     // Trigger initial load animations
