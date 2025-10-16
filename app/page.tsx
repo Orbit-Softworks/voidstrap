@@ -23,7 +23,7 @@ export default function BloxstrapClone() {
 
     // Observe all scroll-animated elements
     const elements = document.querySelectorAll('.animate-on-scroll');
-    elements.forEach((el) => observerRef.current.observe(el));
+    elements.forEach((el) => observerRef.current?.observe(el));
 
     return () => {
       if (observerRef.current) {
