@@ -114,6 +114,10 @@ export default function BloxstrapClone() {
             </p>
           </div>
           <div className="flex-1 text-center">
+            <h2 className="text-xl font-medium mb-3">Contributors</h2>
+            <p className="text-gray-200 mb-6">
+              The talented individuals who brought Voidstrap to life and continue to make it better every day.
+            </p>
             <div className="flex flex-wrap justify-center gap-3 mb-2">
               {CONTRIBUTOR_ICONS.map((icon, index) => (
                 <div 
