@@ -41,7 +41,7 @@ export default function BloxstrapClone() {
 
   // Contributor icons - Replace with your own icon URLs
   const CONTRIBUTOR_ICONS = [
-    'https://via.placeholder.com/64/7c3aed/ffffff?text=1',
+    'https://raw.githubusercontent.com/Orbit-Softworks/voidstrap/refs/heads/main/Bractic.png',
     'https://via.placeholder.com/64/7c3aed/ffffff?text=2',
     'https://via.placeholder.com/64/7c3aed/ffffff?text=3',
     'https://via.placeholder.com/64/7c3aed/ffffff?text=4',
