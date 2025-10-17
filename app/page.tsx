@@ -103,7 +103,7 @@ export default function BloxstrapClone() {
         {/* Open Source Section */}
         <div className="animate-on-scroll opacity-0 translate-y-16 transition-all duration-1000 ease-out py-8 flex flex-col items-center justify-center gap-x-12 gap-y-6 lg:flex-row">
           <div className="flex-1">
-            <h1 className="text-2xl font-medium mb-2">Voidstraps Redistribution Policy</h1>
+            <h1 className="text-2xl font-medium mb-2">Voidstrap's Redistribution Policy</h1>
             <p className="text-gray-200 mb-2">
               Voidstrap's code is publicly available on GitHub to prove it's safe and virus-free. However, using our code in other projects violates our policies and will result in a permanent ban.
             </p>
