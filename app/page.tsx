@@ -37,10 +37,17 @@ export default function BloxstrapClone() {
   // ========================================
   const IMAGES = {
     logo: 'https://raw.githubusercontent.com/Orbit-Softworks/voidstrap/refs/heads/main/voidstrap.png',
-    discordImage: 'https://bloxstraplabs.com/_astro/discord.ByrrKmUB_TGTJD.webp',
-    modsImage: 'https://bloxstraplabs.com/_astro/mods.CtDJj0bv_Z2bSg6j.webp',
-    contributorsImage: 'https://contrib.rocks/image?repo=bloxstraplabs/bloxstrap',
   };
+
+  // Contributor icons - Replace with your own icon URLs
+  const CONTRIBUTOR_ICONS = [
+    'https://via.placeholder.com/64/7c3aed/ffffff?text=1',
+    'https://via.placeholder.com/64/7c3aed/ffffff?text=2',
+    'https://via.placeholder.com/64/7c3aed/ffffff?text=3',
+    'https://via.placeholder.com/64/7c3aed/ffffff?text=4',
+    'https://via.placeholder.com/64/7c3aed/ffffff?text=5',
+    'https://via.placeholder.com/64/7c3aed/ffffff?text=6',
+  ];
   // ========================================
 
   return (
@@ -93,40 +100,6 @@ export default function BloxstrapClone() {
           </p>
         </div>
 
-        {/* Discord Integration Section */}
-        <div className="animate-on-scroll opacity-0 translate-y-16 transition-all duration-1000 ease-out py-8 flex flex-col items-center justify-center gap-x-12 gap-y-6 lg:flex-row">
-          <div className="max-w-lg">
-            <h1 className="text-2xl font-medium mb-2">Bridging Roblox and Discord</h1>
-            <p className="text-gray-200">
-              Share what you're doing among friends with ease, with extensible support for{' '}
-              <a className="text-violet-400 hover:text-violet-300 transition duration-300" href="/wiki/developers/bloxstraprpc/">
-                developer integration
-              </a>
-              .
-            </p>
-          </div>
-          <div>
-            <img src={IMAGES.discordImage} alt="Discord integration" className="mx-auto rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300" width="652" height="202" />
-          </div>
-        </div>
-
-        {/* Customization Section */}
-        <div className="animate-on-scroll opacity-0 translate-y-16 transition-all duration-1000 ease-out py-8 flex flex-col items-center justify-center gap-x-12 gap-y-6 lg:flex-row-reverse">
-          <div className="flex-1">
-            <h1 className="text-2xl font-medium mb-2">Customisation made easier</h1>
-            <p className="text-gray-200">
-              Modify local assets without worrying about them being erased by Roblox updates, and with easy importing of{' '}
-              <a className="text-violet-400 hover:text-violet-300 transition duration-300" href="/wiki/faq#where-can-i-find-mods">
-                community-curated mods
-              </a>
-              .
-            </p>
-          </div>
-          <div className="flex-1">
-            <img src={IMAGES.modsImage} alt="Customization mods" className="mx-auto max-w-90 rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300" width="360" height="259" />
-          </div>
-        </div>
-
         {/* Open Source Section */}
         <div className="animate-on-scroll opacity-0 translate-y-16 transition-all duration-1000 ease-out py-8 flex flex-col items-center justify-center gap-x-12 gap-y-6 lg:flex-row">
           <div className="flex-1">
@@ -140,14 +113,17 @@ export default function BloxstrapClone() {
               </a>
             </p>
           </div>
-          <div className="flex-1 text-left">
-            <img className="mb-2 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" src={IMAGES.contributorsImage} alt="Contributors" />
-            <small className="text-gray-300">
-              Made with{' '}
-              <a className="text-violet-400 hover:text-violet-300 transition duration-300" href="https://contrib.rocks">
-                contrib.rocks
-              </a>
-            </small>
+          <div className="flex-1 text-center">
+            <div className="flex flex-wrap justify-center gap-3 mb-2">
+              {CONTRIBUTOR_ICONS.map((icon, index) => (
+                <div 
+                  key={index}
+                  className="w-16 h-16 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform duration-300"
+                >
+                  <img src={icon} alt={`Contributor ${index + 1}`} className="w-full h-full object-cover" />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
